@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>Grad-CAM app</title>
+    <link rel="stylesheet" type="text/css" href="../static/style.css">
+</head>
+<header>
+    <h1>ImageNetのpretrainedモデルでGrad-CAM</h1>
+</header>
+<body>
+    <div id="branding">
+    <p>画像をアップロードしてください</p>
+    <form method="post" action="/send" enctype="multipart/form-data">
+        <input type="file" id="img_file" name="img_file" accept="image/*">
+        <input type="submit" value="送信" class="btn">
+        <p>1MB以上の画像はアップロードできません</p>
+        <p style="color: {{color}};"> {{massege}} </p>
+    </form>
+    </div>
+</body>
+<footer>
+  <address>Copyright(C)2019 Y.NAKAMA, Allright Reserved.</address>
+</footer>
+</html>
