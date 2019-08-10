@@ -1,6 +1,8 @@
 ### https://raw.github.com/github/gitignore/ea2aa40cb4620e334a87e8494e03d0e7d1ec11df/Global/macOS.gitignore
 
 # General
+.idea/**/workspace.xml
+.idea/**/tasks.xml
 .DS_Store
 .AppleDouble
 .LSOverride

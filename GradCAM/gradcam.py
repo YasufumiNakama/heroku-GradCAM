@@ -53,3 +53,4 @@ def plotGradCAM(model, final_conv, fc_params, loader, img_size=IMG_SIZE, device=
         ax.set_title('Predict: %s' % class_dict[pred_idx], fontsize=14)
         break
     plt.show()
+    return fig

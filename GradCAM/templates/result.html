@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="ja" dir="ltr">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <title>Grad-CAM app</title>
     <link rel="stylesheet" type="text/css" href="../static/style.css">
 </head>
@@ -10,11 +10,10 @@
 </header>
 <body>
     <div id="branding">
-    <p>画像をアップロードしてください</p>
-    <form method="post" action="/send" enctype="multipart/form-data">
-        <input type="file" id="img_file" name="img_file" accept="image/*">
-        <input type="submit" value="送信" class="btn">
-    </form>
+    <h1>Grad-CAM結果</h1>
+    <img src={{img}} alt="Grad-CAM" title="Grad-CAM">
+    <br>
+    <a href="./">TOPに戻る</a>
     </div>
 </body>
 <footer>
