@@ -1,5 +1,6 @@
 flask==1.1.1
 torchvision==0.4.0
+gunicorn==19.9.0
 http://download.pytorch.org/whl/cpu/torch-0.4.1-cp36-cp36m-linux_x86_64.whl
 matplotlib==3.0.3
 numpy==1.16.2
