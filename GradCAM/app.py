@@ -11,7 +11,8 @@ from torch.utils.data import DataLoader
 
 
 app = Flask(__name__)
-device = 'cuda' if torch.cuda.is_available() else 'cpu'
+# device = 'cuda' if torch.cuda.is_available() else 'cpu'
+device = 'cpu'
 
 
 @app.route('/')

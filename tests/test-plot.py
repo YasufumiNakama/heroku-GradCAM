@@ -3,7 +3,8 @@ import torch
 from torch.utils.data import DataLoader
 from GradCAM.dataset import ImageDataset
 
-device = 'cuda' if torch.cuda.is_available() else 'cpu'
+# device = 'cuda' if torch.cuda.is_available() else 'cpu'
+device = 'cpu'
 
 
 def test_plot():
