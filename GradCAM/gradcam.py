@@ -52,5 +52,5 @@ def plotGradCAM(model, final_conv, fc_params, loader, img_size=IMG_SIZE, device=
         plt.imshow(cv2.resize(heatmap, (img_size, img_size), interpolation=cv2.INTER_LINEAR), alpha=0.4, cmap='jet')
         ax.set_title('Predict: %s' % class_dict[pred_idx], fontsize=14)
         break
-    plt.show()
+    # plt.show()
     return fig
